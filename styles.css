@@ -57,3 +57,14 @@ img {
 .mybutton:hover {
 	background-color: #f2401c; 
 }
+
+.button-group {
+	display: inline-block;
+}
+
+.profile-image {
+	width: 450px; /* Adjust the width as needed */
+	border-radius: 20%; /* Optional: Rounded corners */
+	margin-right: 20px; /* Adjust the margin as needed */
+	margin-top: 20px;
+}

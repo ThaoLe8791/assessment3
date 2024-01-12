@@ -1,0 +1,59 @@
+body {
+  background: #ddd;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+	border-bottom: 2px solid orange;
+}
+
+ol {
+	padding-left: 0;
+}
+
+.crumb {
+	margin-right: 2em;
+	display: inline;
+}
+
+a {
+	color: orange;
+}
+
+a:visited {
+	color: crimson;
+}
+
+
+input {
+	display: block;
+}
+
+img {
+	max-width: 300px;
+}
+
+.checkbox-group {
+	display: inline-block;
+}
+  
+  .checkbox-group input[type="checkbox"],
+  .checkbox-group label {
+	display: inline-block;
+	margin-right: 10px; /* Adjust the margin as needed */
+  }
+.mybutton{
+	padding: 10px 20px; 
+	font-size: 15px;    
+	background-color: #f38e09; 
+	color: #ffffff; 
+	border: none;   
+}
+/* Add hover effect */
+.mybutton:hover {
+	background-color: #f2401c; 
+}

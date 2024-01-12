@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+
+    <title>My neighborhood</title>
+</head>
+<body>
+    <h1>Welcome to Downtown Bentonville</h1>
+    
+    <p>
+        Explore the dynamic atmosphere of downtown Bentonville, Arkansas. Known for its rich cultural scene, this area offers a perfect blend of art, entertainment, and culinary delights.
+    </p>
+
+    <div class="links">
+        <h2>Local Restaurants</h2>
+        <ul>
+            <li><a href="bentonvilletaco.com">Bentonville Taco & Tamale Co.</a></li>
+            <li><a href="https://www.google.com/search?sca_esv=1f5f90a622535c9e&cs=1&output=search&q=Crystal+Bridges+Museum+of+American+Art&ludocid=12476663502294684731&lsig=AB86z5XWuYkV-40F94uuHssgiAA9&sa=X&ved=2ahUKEwiuivK2kNeDAxXCF1kFHWe3DrQQ8G0oAHoECCMQAQ">Eleven at Crystal Bridges</a></li>
+            <li><a href="http://www.tablemesabistro.com/menu/TABLE_MESA_MENU.pdf">Table Mesa Bistro with Bakery & Market</a></li>
+        </ul>
+
+        <h2>Parks and Recreation</h2>
+        <ul>
+            <li><a href="https://www.bentonvillear.com/767/Austin-Baggett-Park">Austin-Baggett Park</a></li>
+            <li><a href="http://www.oztrailsnwa.com/">Slaughter Pen Trail</a></li>
+            <li><a href="https://www.bentonvillear.com/779/Gilmore-Park">Gilmore Park</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <button id="restaurant" class="mybutton">Choose a random restaurant</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        let restaurantBut = document.querySelector('#restaurant');
+        restaurantBut.addEventListener('click',chooseR)
+        function chooseR(){
+            let restaurantList = ['The Hive','Table Mesa Bistro with Bakery & Market','The First Seat Pub & Grill', 'Tusk & Trotter American Brasserie', 'Azul Tequila Bistro', 'Pressroom']
+            const randomR = Math.floor(Math.random() * restaurantList.length);
+            document.querySelector('#result').textContent = `Let's go to ${restaurantList[randomR]} today!`
+        }
+        
+    </script>
+
+    
+</body>
+</html>
